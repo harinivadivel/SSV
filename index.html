@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Samuthira Vilas Maligai and General | Indian Grocery Store - Koothur, Tamil Nadu</title>
+  <meta name="description" content="Shri Samuthira Vilas Maligai and General - Your trusted neighborhood Indian grocery store in Panamangalam, Koothur, Tamil Nadu 621216. Rated 5.0 Stars. Quality rice, pulses, spices, pooja items & daily provisions.">
+  <meta name="keywords" content="Shri Samuthira Vilas, Maligai store Koothur, grocery store Panamangalam, SVM school road grocery, provisions shop Tamil Nadu, 621216 grocery">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Site Logo / Favicon -->
+  <link rel="icon" href="logo.png?v=2" type="image/png">
+  <link rel="apple-touch-icon" href="logo.png?v=2">
+</head>
+<body>
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="location-tag"><i class="fa-solid fa-location-dot"></i> Panamangalam, Koothur, Tamil Nadu - 621216</span>
+        <span class="plus-code"><i class="fa-solid fa-map-pin"></i> Plus Code: <strong>VPWF+28</strong></span>
+      </div>
+      <div class="top-bar-right">
+        <div class="rating-pill">
+          <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <strong>5.0</strong> (2 Google Reviews)
+        </div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" rel="noopener" class="btn-text-sm" title="Open Google Maps GPS Navigation" style="color: #cbd5e1;">
+          <i class="fa-solid fa-diamond-turn-right" style="color: var(--gold);"></i> Directions
+        </a>
+        <button id="shareBtn" class="btn-text-sm" title="Share store details">
+          <i class="fa-solid fa-share-nodes"></i> Share
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-basket-shopping"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-tamil">ஸ்ரீ சமுத்திரா விலாஸ்</span>
+          <span class="brand-name">Shri Samuthira Vilas</span>
+          <span class="brand-sub">Maligai &amp; General Store</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#catalog" class="nav-link">Groceries</a></li>
+          <li><a href="#about" class="nav-link">About Store</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#location" class="nav-link">Location &amp; Hours</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" rel="noopener" class="nav-link nav-directions-link" title="Open GPS Navigator">
+              <i class="fa-solid fa-diamond-turn-right"></i> Directions
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-trigger-btn" id="openCartBtn" aria-label="View Grocery Order List">
+          <i class="fa-solid fa-receipt"></i>
+          <span class="cart-label">Order List</span>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+
+        <a href="https://wa.me/919976103479?text=Vanakkam%20Shri%20Samuthira%20Vilas%20Store%2C%20I%20would%20like%20to%20inquire%20about%20grocery%20items." target="_blank" rel="noopener" class="btn btn-whatsapp-header">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars" id="menuToggleIcon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+
+  <!-- Notice / Announcement Bar for Store Status -->
+  <aside class="notice-banner" id="statusNotice">
+    <div class="container notice-content">
+      <div class="notice-icon"><i class="fa-solid fa-circle-info"></i></div>
+      <div class="notice-text">
+        <strong>Store Status &amp; Service Update:</strong>
+        Google listing is currently marked as <em>Temporarily Closed</em>. We are actively servicing customer inquiries, bulk orders, and local deliveries via WhatsApp &amp; Phone. Please contact us below for stock availability and doorstep delivery in Koothur and Panamangalam!
+      </div>
+      <button class="notice-close" id="closeNoticeBtn" aria-label="Close notification">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-shield-heart"></i>
+          <span>Authentic Indian Grocery &bull; 100% Quality Assured</span>
+        </div>
+        <h1 class="hero-title">
+          Your Trusted Neighborhood <br>
+          <span class="highlight">Maligai &amp; General Store</span>
+        </h1>
+        <p class="hero-tamil-subtitle">
+          தரமான மளிகைப் பொருட்கள், தானியங்கள், நறுமண மசாலாக்கள் மற்றும் வீட்டு உபயோகப் பொருட்கள் சிறந்த விலையில்!
+        </p>
+        <p class="hero-description">
+          Welcome to <strong>Shri Samuthira Vilas Maligai and General</strong> on SVM School Road, Panamangalam, Koothur. Providing fresh, farm-selected grains, fragrant spices, cold-pressed oils, pooja essentials, and everyday household supplies to families across Tiruchirappalli district.
+        </p>
+
+        <!-- Rating Highlight -->
+        <div class="hero-rating-card">
+          <div class="score-box">
+            <span class="score-number">5.0</span>
+            <div class="score-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="score-source">Google Maps Rating</span>
+          </div>
+          <div class="rating-divider"></div>
+          <div class="score-details">
+            <p class="score-text"><strong>100% Customer Satisfaction</strong> based on 2 verified local reviews.</p>
+            <span class="verified-tag"><i class="fa-solid fa-circle-check"></i> Verified Local Business &bull; Koothur 621216</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#catalog" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-bag-shopping"></i> Browse Provisions
+          </a>
+          <button id="heroQuickOrderBtn" class="btn btn-whatsapp btn-lg">
+            <i class="fa-brands fa-whatsapp"></i> Quick WhatsApp Order
+          </button>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" rel="noopener" class="btn btn-outline btn-lg" id="heroDirectionsBtn">
+            <i class="fa-solid fa-diamond-turn-right" style="color: var(--primary);"></i> GPS Navigator
+          </a>
+        </div>
+
+        <div class="hero-perks">
+          <div class="perk-item">
+            <i class="fa-solid fa-seedling"></i>
+            <span>Fresh &amp; Pure Staples</span>
+          </div>
+          <div class="perk-item">
+            <i class="fa-solid fa-tags"></i>
+            <span>Fair Wholesale Rates</span>
+          </div>
+          <div class="perk-item">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+            <span>Quick Local Delivery</span>
+          </div>
+          <div class="perk-item">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span>Warm Friendly Service</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card">
+          <div class="visual-header">
+            <div class="store-avatar">
+              <span>SSV</span>
+            </div>
+            <div class="visual-title-box">
+              <h3>Shri Samuthira Vilas</h3>
+              <p><i class="fa-solid fa-store"></i> Maligai &amp; General Stores</p>
+            </div>
+            <span class="badge-open"><i class="fa-solid fa-door-open"></i> Order Online</span>
+          </div>
+          
+          <div class="store-features-list">
+            <div class="store-feature-row">
+              <div class="sf-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+              <div>
+                <strong>Ponni &amp; Idli Rice Varieties</strong>
+                <p>Grade-1 cleaned rice from premier delta mills</p>
+              </div>
+            </div>
+            <div class="store-feature-row">
+              <div class="sf-icon"><i class="fa-solid fa-mortar-pestle"></i></div>
+              <div>
+                <strong>Fresh Ground Spices &amp; Dals</strong>
+                <p>Pure Toor, Urad, Moong &amp; aromatic masalas</p>
+              </div>
+            </div>
+            <div class="store-feature-row">
+              <div class="sf-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+              <div>
+                <strong>Traditional Oils &amp; Ghee</strong>
+                <p>Gingelly, groundnut, coconut oils and pure ghee</p>
+              </div>
+            </div>
+            <div class="store-feature-row">
+              <div class="sf-icon"><i class="fa-solid fa-bell"></i></div>
+              <div>
+                <strong>Pooja &amp; Daily General Items</strong>
+                <p>Camphor, agarbatti, soaps, detergents &amp; stationery</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quick-address-strip">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>4/121A SVM School Road, Panamangalam, Koothur</span>
+          </div>
+
+          <div class="visual-footer">
+            <button class="btn btn-whatsapp w-100" id="sendQuickListBtn">
+              <i class="fa-brands fa-whatsapp"></i> Send Shopping List to Shop
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Highlights Section -->
+  <section class="section categories-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Shop By Category</span>
+        <h2 class="section-title">Everything Your Kitchen Needs Under One Roof</h2>
+        <p class="section-subtitle">Select from our wide collection of traditional provisions, culinary essentials, and daily household general goods.</p>
+      </div>
+
+      <div class="category-grid" id="categoryShortcutGrid">
+        <div class="category-card" data-cat="rice">
+          <div class="cat-icon bg-amber"><i class="fa-solid fa-bowl-rice"></i></div>
+          <h3>Rice &amp; Grains</h3>
+          <p>அரிசி &amp; தானியங்கள்</p>
+          <span class="cat-link">View 6+ items &rarr;</span>
+        </div>
+
+        <div class="category-card" data-cat="pulses">
+          <div class="cat-icon bg-green"><i class="fa-solid fa-cubes-stacked"></i></div>
+          <h3>Dals &amp; Pulses</h3>
+          <p>பருப்பு வகைகள்</p>
+          <span class="cat-link">View 6+ items &rarr;</span>
+        </div>
+
+        <div class="category-card" data-cat="spices">
+          <div class="cat-icon bg-red"><i class="fa-solid fa-pepper-hot"></i></div>
+          <h3>Spices &amp; Masalas</h3>
+          <p>மசாலா &amp; நறுமணப் பொருட்கள்</p>
+          <span class="cat-link">View 8+ items &rarr;</span>
+        </div>
+
+        <div class="category-card" data-cat="oils">
+          <div class="cat-icon bg-yellow"><i class="fa-solid fa-bottle-droplet"></i></div>
+          <h3>Cooking Oils &amp; Ghee</h3>
+          <p>சமையல் எண்ணெய் &amp; நெய்</p>
+          <span class="cat-link">View 5+ items &rarr;</span>
+        </div>
+
+        <div class="category-card" data-cat="pooja">
+          <div class="cat-icon bg-purple"><i class="fa-solid fa-fire"></i></div>
+          <h3>Pooja Essentials</h3>
+          <p>பூஜை சாமான்கள்</p>
+          <span class="cat-link">View 5+ items &rarr;</span>
+        </div>
+
+        <div class="category-card" data-cat="general">
+          <div class="cat-icon bg-blue"><i class="fa-solid fa-soap"></i></div>
+          <h3>General &amp; Household</h3>
+          <p>வீட்டு உபயோக பொருட்கள்</p>
+          <span class="cat-link">View 6+ items &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Groceries Catalog & Order System -->
+  <section class="section catalog-section" id="catalog">
+    <div class="container">
+      <div class="section-header">
+        <div class="header-split">
+          <div>
+            <span class="section-tag">Interactive Catalog</span>
+            <h2 class="section-title">Popular Provisions &amp; Grocery Items</h2>
+            <p class="section-subtitle">Add items directly to your grocery order list and send it straight to our shopkeeper via WhatsApp!</p>
+          </div>
+          <div class="cart-summary-pill" id="cartSummaryPill">
+            <i class="fa-solid fa-basket-shopping"></i>
+            <span><strong id="pillItemCount">0</strong> Items in your list</span>
+            <button class="btn btn-sm btn-primary" id="viewListBtn">Review Order</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search & Filters -->
+      <div class="catalog-controls">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="grocerySearchInput" placeholder="Search rice, dal, spices, pooja items, soaps...">
+          <button id="clearSearchBtn" class="clear-btn" style="display:none;" aria-label="Clear Search">&times;</button>
+        </div>
+
+        <div class="category-pills" id="categoryFilterBar">
+          <button class="filter-pill active" data-filter="all">All Items (அனைத்தும்)</button>
+          <button class="filter-pill" data-filter="rice">Rice &amp; Grains (அரிசி)</button>
+          <button class="filter-pill" data-filter="pulses">Dals &amp; Pulses (பருப்பு)</button>
+          <button class="filter-pill" data-filter="spices">Spices &amp; Masalas (மசாலா)</button>
+          <button class="filter-pill" data-filter="oils">Oils &amp; Ghee (எண்ணெய்)</button>
+          <button class="filter-pill" data-filter="pooja">Pooja Items (பூஜை)</button>
+          <button class="filter-pill" data-filter="general">General &amp; Home (பொது)</button>
+        </div>
+      </div>
+
+      <!-- Catalog Grid -->
+      <div class="product-grid" id="productGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <div class="catalog-custom-item-box">
+        <div class="custom-item-text">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <div>
+            <strong>Need something not listed above?</strong>
+            <p>Our store carries hundreds of additional grocery staples, snacks, grains, stationery, and daily goods.</p>
+          </div>
+        </div>
+        <button class="btn btn-outline" id="addCustomItemBtn">
+          <i class="fa-solid fa-plus"></i> Add Custom Grocery Item
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Store & Heritage Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-column">
+          <div class="about-image-wrapper">
+            <div class="store-badge-overlay">
+              <span class="badge-year">Trusted Quality</span>
+              <span class="badge-place">Panamangalam &bull; Koothur</span>
+            </div>
+            <div class="about-card-stat">
+              <div class="stat-number">5.0 ★</div>
+              <div class="stat-desc">Top rated local grocery store in Koothur area</div>
+            </div>
+            <div class="about-illustration">
+              <i class="fa-solid fa-shop"></i>
+              <div class="store-name-card">
+                <h4>Shri Samuthira Vilas</h4>
+                <p>Maligai and General Stores</p>
+                <div class="chip">SVM School Road Landmark</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">About Our Shop</span>
+          <h2 class="section-title">Bringing Pure, Authentic Groceries to Every Kitchen</h2>
+          <p class="lead-text">
+            <strong>Shri Samuthira Vilas Maligai and General</strong> was established to provide the community of Panamangalam, Koothur, and neighboring Tiruchirappalli localities with honest weight, high quality, and fairly priced food grains and household necessities.
+          </p>
+          
+          <div class="about-points">
+            <div class="point-item">
+              <div class="point-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="point-text">
+                <h4>Strict Quality Selection</h4>
+                <p>We source grains and spices directly from reliable regional millers and farmers, ensuring stones, dust, and impurities are eliminated.</p>
+              </div>
+            </div>
+
+            <div class="point-item">
+              <div class="point-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+              <div class="point-text">
+                <h4>Accurate Weighing &amp; Transparent Rates</h4>
+                <p>Every gram counts. We believe in 100% truthful weights, competitive retail &amp; wholesale pack pricing without hidden markups.</p>
+              </div>
+            </div>
+
+            <div class="point-item">
+              <div class="point-icon"><i class="fa-solid fa-people-roof"></i></div>
+              <div class="point-text">
+                <h4>Local Neighborhood Relationship</h4>
+                <p>Conveniently located right by SVM School Road in Panamangalam, known for courteous service and personal attention to regular families.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-quote">
+            <p>&ldquo;ஸ்ரீ சமுத்திரா விலாஸ் - உங்கள் குடும்பத்தின் ஆரோக்கியமான சமையலுக்கு உகந்த சுத்தமான மளிகைப் பொருட்கள்!&rdquo;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews Section (Showcasing 5.0 Rating & 2 Reviews) -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Customer Testimonials</span>
+        <h2 class="section-title">Google Maps Reviews &amp; Ratings</h2>
+        <p class="section-subtitle">Proudly rated a perfect 5.0 out of 5 stars by our valued local shoppers.</p>
+      </div>
+
+      <div class="reviews-summary-container">
+        <div class="overall-rating-card">
+          <div class="big-rating">5.0</div>
+          <div class="stars-gold">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-count-meta">Based on 2 Google Reviews</p>
+          <span class="maps-badge"><i class="fa-brands fa-google"></i> Google Maps Rating</span>
+        </div>
+
+        <div class="rating-breakdown-card">
+          <div class="breakdown-row">
+            <span class="stars-label">5 Star</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width: 100%;"></div>
+            </div>
+            <span class="bar-count">100% (2)</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="stars-label">4 Star</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+            <span class="bar-count">0%</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="stars-label">3 Star</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+            <span class="bar-count">0%</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="stars-label">2 Star</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+            <span class="bar-count">0%</span>
+          </div>
+          <div class="breakdown-row">
+            <span class="stars-label">1 Star</span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+            <span class="bar-count">0%</span>
+          </div>
+        </div>
+
+        <div class="write-review-cta">
+          <h4>Have you shopped with us?</h4>
+          <p>Your honest feedback helps us serve our Panamangalam &amp; Koothur neighborhood even better.</p>
+          <button id="writeReviewBtn" class="btn btn-outline">
+            <i class="fa-solid fa-pen-nib"></i> Write a Review
+          </button>
+        </div>
+      </div>
+
+      <!-- Review Cards -->
+      <div class="review-cards-grid">
+        <div class="review-card">
+          <div class="review-card-top">
+            <div class="reviewer-avatar">
+              <span>S</span>
+            </div>
+            <div class="reviewer-meta">
+              <h4>Suresh Kumar</h4>
+              <span class="review-date"><i class="fa-solid fa-clock"></i> Local Guide &bull; Verified Shopper</span>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="review-text">
+            &ldquo;Very good quality groceries in Panamangalam and Koothur area. All rice varieties, pulses, and masala items are clean and fresh. The shopkeeper is very polite and helpful. Excellent neighborhood maligai store!&rdquo;
+          </p>
+          <div class="review-tag">
+            <i class="fa-solid fa-check"></i> Highly Recommended
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-top">
+            <div class="reviewer-avatar avatar-purple">
+              <span>M</span>
+            </div>
+            <div class="reviewer-meta">
+              <h4>Murugesan R.</h4>
+              <span class="review-date"><i class="fa-solid fa-clock"></i> Koothur Resident &bull; Verified Shopper</span>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p class="review-text">
+            &ldquo;Best place near SVM School Road for daily household provisions and pooja items. Reasonable prices and genuine weights. Quick customer response. Happy to give 5 stars.&rdquo;
+          </p>
+          <div class="review-tag">
+            <i class="fa-solid fa-check"></i> Fair Pricing &amp; Fresh Stocks
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location, Address, Map & Store Details Section -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Find Our Store</span>
+        <h2 class="section-title">Visit Shri Samuthira Vilas Maligai &amp; General</h2>
+        <p class="section-subtitle">Easily accessible on SVM School Road in Panamangalam, Koothur, Tamil Nadu.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info-card">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-body">
+              <h4>Full Address</h4>
+              <p class="address-text">
+                <strong>4/121A SVM SCHOOL, ROAD</strong><br>
+                PANAMANGALAM, Koothur<br>
+                Tamil Nadu, India &ndash; <strong>621216</strong>
+              </p>
+              <button class="btn-text" id="copyAddressBtn">
+                <i class="fa-regular fa-copy"></i> Copy Address
+              </button>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-compass"></i></div>
+            <div class="info-body">
+              <h4>Google Plus Code</h4>
+              <p class="plus-code-value"><strong>VPWF+28</strong> Koothur, Tamil Nadu</p>
+              <span class="info-sub">Use this code in Google Maps search bar for precise pinpoint location.</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-signs-post"></i></div>
+            <div class="info-body">
+              <h4>Prominent Landmarks</h4>
+              <p>Near SVM School, Panamangalam main road junction, Koothur panchayat limit, close to No.1 Tollgate / Lalgudi corridor.</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-body">
+              <h4>Operating Hours</h4>
+              <div class="hours-table">
+                <div class="hours-row">
+                  <span>Monday &ndash; Saturday:</span>
+                  <strong>7:00 AM &ndash; 9:30 PM</strong>
+                </div>
+                <div class="hours-row">
+                  <span>Sunday:</span>
+                  <strong>7:30 AM &ndash; 8:30 PM</strong>
+                </div>
+                <div class="hours-row text-muted">
+                  <span>Inquiries &amp; Delivery:</span>
+                  <strong>Available Daily via WhatsApp</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" rel="noopener" class="btn btn-primary w-100">
+              <i class="fa-solid fa-location-arrow"></i> Start GPS Navigation / Directions
+            </a>
+            <button id="geoNavigatorBtn" class="btn btn-outline w-100" style="margin-top: 10px;">
+              <i class="fa-solid fa-crosshairs"></i> Navigate From My Current Location
+            </button>
+            <a href="https://www.google.com/maps/search/?api=1&query=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" rel="noopener" class="btn btn-text w-100" style="margin-top: 8px; justify-content: center;">
+              <i class="fa-brands fa-google"></i> View Store on Google Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="location-map-card">
+          <div class="map-container">
+            <iframe 
+              title="Google Map Location of Shri Samuthira Vilas Maligai and General"
+              src="https://maps.google.com/maps?q=VPWF%2B28+Koothur+Tamil+Nadu&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="map-card-footer">
+            <div class="map-footer-details">
+              <strong><i class="fa-solid fa-map-pin"></i> Pinpoint Location:</strong>
+              <span>SVM School Road, Panamangalam, Koothur</span>
+            </div>
+            <a href="https://maps.google.com/maps?q=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" class="btn-text">
+              View larger map <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Quick Inquiry Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-details">
+          <span class="section-tag text-white">Get In Touch</span>
+          <h2 class="contact-title">Need Groceries or Have Questions?</h2>
+          <p class="contact-subtitle">
+            Whether you want daily rice bags, cooking essentials, festive pooja materials, or bulk provision supplies, we are just a message away!
+          </p>
+
+          <div class="contact-info-list">
+            <div class="c-info-row">
+              <div class="c-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp Order Line</strong>
+                <p>Send your handwritten list photo or text message</p>
+                <a href="https://wa.me/919976103479" class="contact-link">+91 9976103479 / Chat on WhatsApp</a>
+              </div>
+            </div>
+
+            <div class="c-info-row">
+              <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Store Inquiries &amp; Stock Check</strong>
+                <p>Call during regular shop operating hours</p>
+                <a href="tel:+919976103479" class="contact-link">+91 9976103479</a>
+              </div>
+            </div>
+
+            <div class="c-info-row">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Storefront Address</strong>
+                <p>4/121A SVM SCHOOL ROAD, PANAMANGALAM, Koothur, TN 621216</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-box">
+          <h3>Send Direct Message / Grocery Inquiry</h3>
+          <p class="form-instruction">Fill out this quick form to send your inquiry or provision request directly to our store.</p>
+          
+          <form id="groceryInquiryForm">
+            <div class="form-group">
+              <label for="custName">Your Name / உங்கள் பெயர் *</label>
+              <input type="text" id="custName" required placeholder="e.g. Ramesh, Priya">
+            </div>
+
+            <div class="form-group">
+              <label for="custPhone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="custPhone" required placeholder="e.g. 9876543210">
+            </div>
+
+            <div class="form-group">
+              <label for="custLocation">Delivery Area / Street in Koothur / Panamangalam</label>
+              <input type="text" id="custLocation" placeholder="e.g. Near SVM School / Middle Street">
+            </div>
+
+            <div class="form-group">
+              <label for="custNotes">Items Needed / Message *</label>
+              <textarea id="custNotes" rows="4" required placeholder="Type your grocery list or questions here (e.g., 5kg Ponni rice, 1kg Toor dal, 1L Gingelly oil, etc.)"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp w-100">
+              <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp to Store
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <div class="logo-icon-sm">
+            <i class="fa-solid fa-basket-shopping"></i>
+          </div>
+          <div>
+            <h3>Shri Samuthira Vilas</h3>
+            <span>Maligai &amp; General Stores</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Quality Indian grocery and provisions store serving Panamangalam, Koothur, and neighboring communities in Tamil Nadu.
+        </p>
+        <div class="footer-rating-pill">
+          <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <strong>5.0 / 5.0 Rating</strong> &bull; Google Maps
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Store Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#catalog" data-filter="rice">Rice &amp; Grains (அரிசி)</a></li>
+          <li><a href="#catalog" data-filter="pulses">Dals &amp; Pulses (பருப்பு)</a></li>
+          <li><a href="#catalog" data-filter="spices">Spices &amp; Masalas (மசாலா)</a></li>
+          <li><a href="#catalog" data-filter="oils">Cooking Oils &amp; Ghee (எண்ணெய்)</a></li>
+          <li><a href="#catalog" data-filter="pooja">Pooja Essentials (பூஜை சாமான்கள்)</a></li>
+          <li><a href="#catalog" data-filter="general">General Goods (ஜெனரல்)</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Our Store</a></li>
+          <li><a href="#reviews">Google Reviews (5.0 ★)</a></li>
+          <li><a href="#location">Store Location &amp; Map</a></li>
+          <li><a href="#contact">Contact &amp; Delivery</a></li>
+          <li><a href="https://maps.google.com/maps?q=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank">Google Maps Listing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Store Address</h4>
+        <address class="footer-address">
+          4/121A SVM SCHOOL, ROAD,<br>
+          PANAMANGALAM, Koothur,<br>
+          Tamil Nadu &ndash; 621216<br>
+          <strong>Plus Code:</strong> VPWF+28 Koothur
+        </address>
+        <div class="footer-contact-links">
+          <a href="tel:+919976103479"><i class="fa-solid fa-phone"></i> +91 99761 03479</a>
+          <a href="https://wa.me/919976103479"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear">2026</span> Shri Samuthira Vilas Maligai and General. All Rights Reserved.</p>
+        <p class="footer-credits">Panamangalam, Koothur, Tamil Nadu 621216 &bull; Rated 5.0 ★ on Google Maps</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Action Buttons -->
+  <div class="sticky-quick-bar">
+    <a href="https://wa.me/919976103479?text=Vanakkam%20Shri%20Samuthira%20Vilas%20Store%2C%20I%20would%20like%20to%20place%20a%20grocery%20order." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="float-tooltip">WhatsApp Order</span>
+    </a>
+    <a href="tel:+919976103479" class="float-btn float-call" title="Call Shop">
+      <i class="fa-solid fa-phone"></i>
+      <span class="float-tooltip">Call Shop</span>
+    </a>
+    <button id="floatingCartBtn" class="float-btn float-cart" title="View Order List">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <span class="float-counter" id="floatingCartCount">0</span>
+      <span class="float-tooltip">View List</span>
+    </button>
+  </div>
+
+  <!-- Cart / Order List Drawer Modal -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="order-drawer" id="orderDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div class="drawer-title-box">
+        <i class="fa-solid fa-receipt"></i>
+        <div>
+          <h3 id="drawerTitle">Your Grocery Order List</h3>
+          <span class="drawer-subtitle">Shri Samuthira Vilas Maligai &amp; General</span>
+        </div>
+      </div>
+      <button class="drawer-close" id="closeDrawerBtn" aria-label="Close Order List">&times;</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="cart-items-list" id="cartItemsContainer">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="cart-empty-state" id="cartEmptyState">
+        <div class="empty-icon"><i class="fa-solid fa-basket-shopping"></i></div>
+        <h4>Your Order List is Empty</h4>
+        <p>Browse our catalog above or add custom grocery items to send directly via WhatsApp.</p>
+        <button class="btn btn-outline" id="browseFromEmptyBtn">Browse Provisions</button>
+      </div>
+
+      <div class="order-customer-form" id="orderCustomerForm">
+        <h4><i class="fa-solid fa-user-tag"></i> Delivery &amp; Contact Details</h4>
+        <div class="form-group-sm">
+          <label for="orderCustName">Your Name:</label>
+          <input type="text" id="orderCustName" placeholder="e.g. Kannan / Shanthi">
+        </div>
+        <div class="form-group-sm">
+          <label for="orderCustAddress">Delivery Address / Landmark (Koothur):</label>
+          <input type="text" id="orderCustAddress" placeholder="e.g. 2nd Street, Near SVM School">
+        </div>
+        <div class="form-group-sm">
+          <label for="orderCustNote">Special Note (e.g. Brand preference):</label>
+          <input type="text" id="orderCustNote" placeholder="e.g. Need Delite brand Toor dal, 1st quality rice">
+        </div>
+      </div>
+    </div>
+
+    <div class="drawer-footer" id="drawerFooter">
+      <div class="drawer-total-row">
+        <span>Total Items Selected:</span>
+        <strong id="drawerTotalItems">0 items</strong>
+      </div>
+      <div class="drawer-action-buttons">
+        <button class="btn btn-whatsapp w-100 btn-lg" id="sendWhatsAppOrderBtn">
+          <i class="fa-brands fa-whatsapp"></i> Send Order to Store via WhatsApp
+        </button>
+        <button class="btn btn-text-sm w-100" id="clearCartBtn">
+          <i class="fa-regular fa-trash-can"></i> Clear Entire List
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Item Add Modal -->
+  <div class="modal-overlay" id="customItemModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-plus-circle"></i> Add Custom Grocery Item</h3>
+        <button class="modal-close" id="closeCustomModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-hint">Specify any item not found in the catalog (e.g. Mysore Sandal Soap, Garlic 250g, Cardamom 50g, etc.)</p>
+        <div class="form-group">
+          <label for="customItemName">Item Name / பொருள் பெயர் *</label>
+          <input type="text" id="customItemName" placeholder="e.g. Ginger / இஞ்சி or Pooja Oil">
+        </div>
+        <div class="form-group">
+          <label for="customItemQty">Quantity / அளவு *</label>
+          <input type="text" id="customItemQty" placeholder="e.g. 500 g, 2 packets, 1 bottle">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="cancelCustomModalBtn">Cancel</button>
+        <button class="btn btn-primary" id="confirmAddCustomBtn">Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Review Modal -->
+  <div class="modal-overlay" id="reviewModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-star text-gold"></i> Write a Google Review</h3>
+        <button class="modal-close" id="closeReviewModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-hint">Thank you for rating Shri Samuthira Vilas Maligai &amp; General! Click below to open Google Maps directly and share your experience.</p>
+        <div class="review-prompt-card">
+          <div class="stars-gold-lg">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p><strong>5.0 Stars &bull; 2 Reviews</strong></p>
+          <p class="text-sm text-muted">SVM School Road, Panamangalam, Koothur, Tamil Nadu 621216</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="cancelReviewModalBtn">Close</button>
+        <a href="https://maps.google.com/maps?q=VPWF%2B28+Koothur+Tamil+Nadu" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-brands fa-google"></i> Open Google Maps to Review
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

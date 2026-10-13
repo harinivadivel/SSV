@@ -1,0 +1,12 @@
+{
+  "name": "shri-samuthira-vilas-maligai",
+  "version": "1.0.0",
+  "description": "Website for Shri Samuthira Vilas Maligai and General Store, Koothur",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["grocery", "maligai", "tamilnadu", "koothur"],
+  "author": "",
+  "license": "ISC"
+}
